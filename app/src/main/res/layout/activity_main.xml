@@ -3,8 +3,10 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_200"
     android:orientation="vertical"
     android:padding="16dp">
+
     <LinearLayout
         android:id="@+id/result"
         android:layout_width="match_parent"
@@ -13,22 +15,24 @@
         <TextView
             android:id="@+id/resultField"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18sp"
-            android:layout_height="wrap_content" />
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/operationField"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="18sp"
             android:layout_height="wrap_content"
-            />
+            android:layout_weight="1"
+            android:textSize="18sp" />
     </LinearLayout>
+
     <EditText
         android:id="@+id/numberField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +44,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="7"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -48,7 +52,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="8"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -56,7 +60,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="9"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -64,8 +68,9 @@
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="/"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -76,7 +81,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="4"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -84,7 +89,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="5"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -92,7 +97,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="6"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -100,8 +105,9 @@
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="*"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -112,7 +118,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="1"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -120,7 +126,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="2"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -128,7 +134,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="3"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -136,8 +142,9 @@
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="-"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -148,7 +155,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="0"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -156,7 +163,7 @@
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text=","
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -164,7 +171,7 @@
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="+"
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
 
         <Button
             android:layout_width="0dp"
@@ -172,6 +179,21 @@
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="="
-            android:theme="@style/Theme.MaterialComponents.Dialog" />
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_clean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="C"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
     </LinearLayout>
 </LinearLayout>

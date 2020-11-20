@@ -8,14 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     TextView resultField; // текстовое поле для вывода результата
     EditText numberField;   // поле для ввода числа
     TextView operationField;    // текстовое поле для вывода знака операции
     Double operand = null;  // операнд операции
     String lastOperation = "="; // последняя операция
-
+    Button cleanOn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         resultField =(TextView) findViewById(R.id.resultField);
         numberField = (EditText) findViewById(R.id.numberField);
         operationField = (TextView) findViewById(R.id.operationField);
+        cleanOn = (Button) findViewById(R.id.button_clean);
+        cleanOn.setOnClickListener(this);
 
     }
     // сохранение состояния
@@ -109,5 +111,9 @@ public class MainActivity extends AppCompatActivity {
         }
         resultField.setText(operand.toString().replace('.', ','));
         numberField.setText("");
+    }
+    @Override
+    public void onClick(View v) {
+        resultField.setText("");
     }
 }
